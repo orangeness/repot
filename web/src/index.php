@@ -4,7 +4,7 @@ if (!$link) {
 echo "tidak bisa konek ke MySQL" . PHP_EOL;
 exit;
 }
-$sql = "SELECT * FROM users";
+$sql = "SELECT COUNT(nama) AS `Jumlah User` FROM users";
 $result = mysqli_query($link, $sql);
 echo "<br>";
 echo "<table border='1'>";
